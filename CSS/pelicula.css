@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {  /*Declaracion de la fuente*/
+  font-family: 'Terror Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Terror Pro Regular'), url('terror_pro.woff') format('woff');
+}
+
+h1{
+  font-family:'Terror Pro Regular';
+  font-size: 48px;
+  background: #000000;
+  background: -moz-linear-gradient(to top, #000000 0%, #CF1512 100%);
+  background: linear-gradient(to top, #000000 0%, #CF1512 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+}
+
+body{
+  background-image: url('IMG/fondo.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -moz-background-size: 100%;
+}
+main{
+	width: 80%;
+  height: 100vh;
+	text-align: justify;
+	padding: 1rem;
+	overflow: auto;
+	box-sizing: border-box;
+	margin: 0 10%;
+  background-color: rgba(46, 46, 46, 0.5);
+  font-size: 18px;
+
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(46, 46, 46, 0.5);
+  text-align: center;
+  font-family: Bookman, URW Bookman L, serif;
+}
+
+footer > p {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+input[type='button'], button {
+  font-size:15px;
+  padding: 10px 15px;
+  margin: 20px;
+  border-width:1px;
+  color:#777777;
+  border-color:#dcdcdc;
+  font-weight:bold;
+  border-top-left-radius:6px;
+  border-top-right-radius:6px;
+  border-bottom-left-radius:6px;
+  border-bottom-right-radius:6px;
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+  text-shadow:inset 0px 1px 0px #ffffff;
+  background:linear-gradient(#ededed, #dfdfdf);
+}
+
+input[type='button']:hover, button:hover{
+  background: linear-gradient(#dfdfdf, #ededed);
+}
+
+.personaje_hablar_elegido {
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  color: #0CFF00;
+}
+.personaje_hablar_malo {
+  font-family: Andale Mono, monospace;
+  color: #FFB900;
+}
+.personaje_hablar_indefinido {
+  font-family: Andale Mono, monospace;
+  color: #FFB900;
+}
+.narrador_hablar {
+  font-family: monospace;
+  font-size:15px;
+  margin: 5px;
+  color: white;
+}
